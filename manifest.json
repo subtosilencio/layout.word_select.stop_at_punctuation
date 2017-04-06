@@ -1,0 +1,20 @@
+ {
+  "name": "Lest Develop",
+  "version": "1.0",
+  "description": "Set to False the firefox option layout.word_select.stop_at_punctuation. Para mais informações consulte: www.letsdevelop.com.br",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "icons": { "16": "icon.png",
+           	 "48": "icon.png",
+            "128": "icon.png" },
+
+  "content_scripts": [ {
+    "js": [ "file.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
